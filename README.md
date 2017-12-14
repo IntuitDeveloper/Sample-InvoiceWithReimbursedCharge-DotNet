@@ -10,15 +10,11 @@ Note: This app has been developed and tested on Windows 7
 ### Table of Contents
 
 * [Running the Application](#running-the-application)
-* [Project Structure](#project-structure)
 * [Sample Overview](#sample-overview)
 
 ### Running the Application
 
-1. Clone the repository:
-```
-git clone https://github.com/IntuitDeveloper/Sample_InvoiceWithReimbursedCharge_DotNet.git
-```
+1. Clone the repository on your machine
 2. cd to project directory and launch ```Sample_InvoiceWithReimbursedCharge_DotNet``` in Visual Studio
 3. Open Web.config and fill details for ```clientId```, ```clientSecret``` and ```logPath``` from App Keys section on your [developer account] (https://developer.intuit.com)
 4. Copy ```redirectURI``` value in App Keys tab 
