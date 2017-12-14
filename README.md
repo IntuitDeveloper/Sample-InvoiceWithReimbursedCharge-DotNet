@@ -24,7 +24,7 @@ Note: This app has been developed and tested on Windows 7
 1. Create Item-based and Account-based Billable expense 
 2. Create an Invoice with a simple description line item
 3. Billable expense is linked with Invoice in UI (this link creation is not currently supported by API)
-
+![image](Sample_InvoiceWithReimbursedCharge_DotNet/Sample_InvoiceWithReimbursedCharge_DotNet/Images/link_billable_expense.png)
 4. Email invoice to customer
 5. Record a payment on this invoice in QBO
 
