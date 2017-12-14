@@ -21,6 +21,8 @@ Note: This app has been developed and tested on Windows 7
 5. Build and Run
 
 ### Sample Overview
+
+This workflow that this app follows is as follows:
 1. Create Item-based and Account-based Billable expense 
 2. Create an Invoice with a simple description line item
 3. Billable expense is linked with Invoice in UI (this link creation is not currently supported by API)
