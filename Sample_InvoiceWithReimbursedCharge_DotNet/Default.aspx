@@ -28,12 +28,14 @@
             </p>  
 
             <p>
-                <asp:Label runat="server">"This sample app deals with how to link Billable expenses (Reimbursed charge) with Invoices. To read more about it go to: <a href='https://developer.intuit.com/hub/blog/2017/06/21/reimburse-charge-support-quickbooks-online-api'>blog on Reimbursed Charge</a>
+                <asp:Label runat="server">"This sample app demonstartes a workflow for Billable expenses (Reimbursed charge) and Invoices, . To read more about it go to: <a href='https://developer.intuit.com/hub/blog/2017/06/21/reimburse-charge-support-quickbooks-online-api'>blog on Reimbursed Charge</a>
                     The flow showed in this sample app is as follows."</asp:Label>
-                <asp:ListBox runat="server" ID="Label2">
+                <asp:Label runat="server">"Note: In case of issues, please check logs in the filepath you mentioned or debug the code."</asp:Label>
+                <asp:ListBox runat="server" ID="Label2" Height="150px" >
                     <asp:ListItem Text="1. Click first button here to create Item and Account based Billable Expense." />
                     <asp:ListItem Text="2. Click invoice button to create an Invoice with just a description for the same customer as in Expense created before." />
-                    <asp:ListItem>"3. UI step: Go to QBO UI to the invoice just created (see id after it has been created) and in the right drawer window, add the two item to the invoice and hit save. This is a manual linking since the API does not support creation of this link yet.To see what links are supported by API check here: <a href='https://developer.intuit.com/docs/00_quickbooks_online/2_build/60_tutorials/0030_manage_linked_transactions'>Other linked transactions guide</a>" </asp:ListItem>
+                    <asp:ListItem>"3. UI step: Go to QBO UI to the invoice just created (see id after it has been created) and in the right drawer window, add the two item to the invoice and hit save. This is a manual linking since the API does not support creation of this link yet.</asp:ListItem>
+                    <asp:ListItem>To see what links are supported by API check here: <a href='https://developer.intuit.com/docs/00_quickbooks_online/2_build/60_tutorials/0030_manage_linked_transactions'>Other linked transactions guide</a>"</asp:ListItem>
                     <asp:ListItem Text="4. Enter a valid email to send this linked invoice to be sent to that email." />
                     <asp:ListItem Text="5. After the invoice has been paid for, click on Receive Payment to record the payment in QBO." />
                 </asp:ListBox>
