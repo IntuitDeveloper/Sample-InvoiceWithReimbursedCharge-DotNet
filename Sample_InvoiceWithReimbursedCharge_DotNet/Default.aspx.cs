@@ -958,15 +958,16 @@ namespace Sample_InvoiceWithReimbursedCharge_DotNet
         /// <returns></returns>
         public void CreateInvoiceCall(ServiceContext context)
         {
-            //Customer customer = (Customer)Session["Customer"];
             try
             {
                 Customer customer = (Customer)Session["Customer"];
+                //Customer customer = QBOHelper.QBO.CustomerCreate(context);
                 Invoice invoice = QBOApp.InvoiceCreate(context, customer);
                 HttpContext.Current.Session["Invoice"] = invoice;
                 output("QBO Invoice call successful.");
                 showInvoiceId.Visible = true;
                 showInvoiceId.Text = "Created invoice with id: "+invoice.Id;
+                output("Invoice with Id " + invoice.Id + " created");
             }
             catch (Exception ex)
             {
@@ -989,6 +990,7 @@ namespace Sample_InvoiceWithReimbursedCharge_DotNet
                 output("QBO Expense call successful.");
                 lblQBOCall.Visible = true;
                 lblQBOCall.Text = "Created expense with id: " + purchase.Id;
+                output("Expense with Id " + purchase.Id + " created");
             }
             catch (Exception ex)
             {

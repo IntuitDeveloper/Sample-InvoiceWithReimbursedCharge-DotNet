@@ -111,12 +111,22 @@ namespace Sample_InvoiceWithReimbursedCharge_DotNet
         /// <returns>invoice</returns>
         public static Invoice InvoiceCreate(ServiceContext context, Customer customer)
         {
+            Item item = QBOHelper.QBO.ItemCreate(context);
             Line line = new Line
             {
-                DetailType = LineDetailTypeEnum.DescriptionOnly,
+                DetailType = LineDetailTypeEnum.SalesItemLineDetail,
                 DetailTypeSpecified = true,
-                Description = "Sample for Reimburse Charge with Invoice."
+                Description = "Sample for Reimburse Charge with Invoice.",
+                Amount = new Decimal(40),
+                AmountSpecified = true
+               
             };
+            SalesItemLineDetail lineDetail = new SalesItemLineDetail
+            {
+                ItemRef = new ReferenceType { name = item.Name, Value = item.Id }
+            };
+            line.AnyIntuitObject = lineDetail;
+
             Line[] lines = { line };
 
             Invoice invoice = new Invoice
@@ -124,7 +134,7 @@ namespace Sample_InvoiceWithReimbursedCharge_DotNet
                 Line = lines,
                 CustomerRef = new ReferenceType { name = customer.DisplayName, Value = customer.Id },
                 TxnDate = DateTime.Now.Date
-        };
+            };
 
             Invoice apiResponse = QBOHelper.Helper.AddToQBO(context, invoice);
             return apiResponse;
