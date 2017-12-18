@@ -5,7 +5,7 @@ This sample app is meant to provide working example of how to make API calls to 
 
 For example, certain concerns are not addressed at all in our samples (e.g. security, privacy, scalability). In our sample apps, we strive to strike a balance between clarity, maintainability, and performance where we can. However, clarity is ultimately the most important quality in a sample app. Therefore there are certain instances where we might forgo a more complicated implementation (e.g. caching a frequently used value, robust error handling, more generic domain model structure) in favor of code that is easier to read. In that light, we welcome any feedback that makes our samples apps easier to learn from.
 
-Note: This app has been developed and tested on Windows 7
+Note: This app has been developed and tested on Windows 7 and only deals with US QBO companies. The code will have to be modified for non-US companies. Please check [DotNet CRUD sample app] (https://github.com/IntuitDeveloper/SampleApp-CRUD_.Net_Oauth2) to see how to make calls for other entities.
 
 ### Table of Contents
 
