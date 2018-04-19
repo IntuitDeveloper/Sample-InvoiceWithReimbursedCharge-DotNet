@@ -1,3 +1,5 @@
+[![Sample Banner](views/Sample.png)][ss1]
+
 ## DotNet Framework 4.6.1 V3 Sample App with OAuth2
 ### Sample App in C# that goes over Reimbursed Charge workflow using QBO Accounting API
 
@@ -30,3 +32,4 @@ This workflow that this app follows is as follows:
 4. Email invoice to customer
 5. Record a payment on this invoice in QBO
 
+[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=Sample_InvoiceWithReimbursedCharge_DotNet
