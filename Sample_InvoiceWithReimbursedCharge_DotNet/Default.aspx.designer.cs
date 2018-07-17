@@ -22,31 +22,40 @@ namespace Sample_InvoiceWithReimbursedCharge_DotNet {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// connect control.
+        /// intro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl connect;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl intro;
         
         /// <summary>
-        /// btnOpenId control.
+        /// oauth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnOpenId;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl oauth;
         
         /// <summary>
-        /// revoke control.
+        /// btnOAuth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl revoke;
+        protected global::System.Web.UI.WebControls.ImageButton btnOAuth;
+        
+        /// <summary>
+        /// connected control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl connected;
         
         /// <summary>
         /// lblConnected control.
@@ -146,14 +155,5 @@ namespace Sample_InvoiceWithReimbursedCharge_DotNet {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label showPaymentId;
-        
-        /// <summary>
-        /// btnRevoke control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRevoke;
     }
 }
