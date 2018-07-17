@@ -18,7 +18,7 @@ Note: This app has been developed and tested on Windows 7 and only deals with US
 
 1. Clone the repository on your machine
 2. cd to project directory and launch ```Sample_InvoiceWithReimbursedCharge_DotNet``` in Visual Studio
-3. Open Web.config and fill details for ```clientId```, ```clientSecret``` and ```logPath``` from App Keys section on your [developer account](https://developer.intuit.com)
+3. Open Web.config and fill details for ```clientId```, ```clientSecret```, ```appEnvironment``` and ```logPath``` from App Keys section on your [developer account](https://developer.intuit.com)
 4. Copy ```redirectURI``` value in App Keys tab 
 5. Build and Run
 
@@ -32,4 +32,5 @@ This workflow that this app follows is as follows:
 4. Email invoice to customer
 5. Record a payment on this invoice in QBO
 
+#### Note: If you want to see the old way of using standalone OAuth2 clients, download the v1.0 of the app from Releases tab of this repo
 [ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=Sample_InvoiceWithReimbursedCharge_DotNet
