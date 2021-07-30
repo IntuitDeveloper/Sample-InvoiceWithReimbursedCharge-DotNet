@@ -1,4 +1,4 @@
-[![Sample Banner](views/Sample.png)][ss1]
+[![Rate your Sample](views/Ratesample.png)][ss1][![Yes](views/Thumbup.png)][ss2][![No](views/Thumbdown.png)][ss3]
 
 ## DotNet Framework 4.6.1 V3 Sample App with OAuth2
 ### Sample App in C# that goes over Reimbursed Charge workflow using QBO Accounting API
@@ -33,4 +33,6 @@ This workflow that this app follows is as follows:
 5. Record a payment on this invoice in QBO
 
 #### Note: If you want to see the old way of using standalone OAuth2 clients, download the v1.0 of the app from Releases tab of this repo
-[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=Sample_InvoiceWithReimbursedCharge_DotNet
+[ss1]: #
+[ss2]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=Yes&checkpoint=Sample_InvoiceWithReimbursedCharge_DotNet&pageUrl=github
+[ss3]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=No&checkpoint=Sample_InvoiceWithReimbursedCharge_DotNet&pageUrl=github
